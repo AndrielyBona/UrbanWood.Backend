@@ -1,0 +1,122 @@
+package br.sc.senac.urbanwood.service.woodwork;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class WoodworkServiceImpl{
+//
+//		implements WoodworkService {
+//
+//	private final WoodworkRepository woodworkRepository;
+//	private final WoodworkMapper woodworkMapper;
+//	private final ContactRepository contactRepository;
+//	private final AddressRepository addressRepository;
+//
+//	public WoodworkServiceImpl(WoodworkRepository woodworkRepository, WoodworkMapper woodworkMapper,
+//			ContactRepository contactRepository, AddressRepository addressRepository) {
+//		this.woodworkRepository = woodworkRepository;
+//		this.woodworkMapper = woodworkMapper;
+//		this.contactRepository = contactRepository;
+//		this.addressRepository = addressRepository;
+//
+//	}
+//
+//	public WoodworkDTO save(WoodworkDTO dto) {
+//
+//		Contact contact = new Contact(dto.idWoodwork(), dto.email(), dto.phone(), dto.socialNetwork());
+//		Contact contactSaved = contactRepository.save(contact);
+//
+//		Address address = new Address(dto.idWoodwork(), dto.nameStreet(), dto.number(), dto.neighborhood(),
+//				dto.complement(), dto.city(), dto.cep());
+//		Address addressSaved = addressRepository.save(address);
+//
+//		Woodwork woodwork = new Woodwork(dto.idWoodwork(), null, dto.login(), dto.password(), address, contact,
+//				dto.companyName(), dto.cnpj(), dto.description());
+//		Woodwork woodworkSaved = woodworkRepository.save(woodwork);
+//
+//		return woodworkMapper.toDTO(woodworkSaved);
+//	}
+//
+//	public void delete(Long id) {
+//
+//		if (!woodworkRepository.existsById(id))
+//			throw new WoodworkNotFoundException("Woodwork " + id + " was not found");
+//
+//		woodworkRepository.deleteById(id);
+//	}
+//
+//	public WoodworkDTO findById(Long id) {
+//		Woodwork woodwork = woodworkRepository.findById(id)
+//				.orElseThrow(() -> new WoodworkNotFoundException("Client " + id + " was not found"));
+//
+//		return new WoodworkDTO(woodwork.getId(), woodwork.getCompanyName(), woodwork.getCnpj(),
+//				woodwork.getDescription(), woodwork.getAddress().getStreetName(), woodwork.getAddress().getNumber(),
+//				woodwork.getAddress().getComplement(), woodwork.getAddress().getNeighborhood(),
+//				woodwork.getAddress().getCity(), woodwork.getAddress().getCep(), woodwork.getContact().getNetWork(),
+//				woodwork.getContact().getEmail(), woodwork.getContact().getPhoneNumber(), woodwork.getLogin(),
+//				woodwork.getPassword());
+//	}
+//
+//	@Override
+//	public void update(WoodworkDTO dto, Long id) {
+//		// TODO Auto-generated method stub
+//
+//	}
+//
+//	@Override
+//	public List<WoodworkDTO> findAll() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+
+	/*public List<WoodworkProjection> findAll() {
+		return null;
+	}
+
+	public void update(WoodworkDTO woodworkDTO, Long id) {
+		
+	}
+
+	/*
+	 * public void update(WoodworkDTO woodworkDTO, Long id) {
+	 * 
+	 * Woodwork woodwork = woodworkRepository.findById(id) .orElseThrow(() -> new
+	 * WoodworkNotFoundException("Woodwork " + id + " was not found"));
+	 * 
+	 * if (woodworkDTO.cpnj().equals(woodwork.getCnpj()) &&
+	 * woodworkDTO.companyName().equals(woodwork.getCompanyName())) {
+	 * woodwork.setCompanyName(woodworkDTO.companyName());
+	 * woodwork.setDescription(woodworkDTO.description());
+	 * woodwork.setCnpj(woodworkDTO.cpnj()); woodworkRepository.save(woodwork);
+	 * return; }
+	 * 
+	 * if (woodworkRepository.existsByCnpj(woodworkDTO.cpnj())) throw new
+	 * WoodworkCnpjRegisteredException("Cnpj " + woodworkDTO.cpnj() +
+	 * " is already registered");
+	 * 
+	 * woodwork.setCompanyName(woodworkDTO.companyName());
+	 * woodwork.setDescription(woodworkDTO.description());
+	 * woodwork.setCnpj(woodworkDTO.cpnj()); woodworkRepository.save(woodwork); }
+	 * 
+	 * 
+	 * 
+	 * public ProfileWoodworkFullEditProjection findById(Long id) { return
+	 * woodworkRepository.findById(id) .orElseThrow(() -> new
+	 * WoodworkNotFoundException("Woodwork " + id + " was not found")); }
+	 * 
+	 * public WoodworkDTO findByCnpj(String cnpj) { return
+	 * woodworkRepository.findByCnpj(cnpj) .orElseThrow(() -> new
+	 * WoodworkNotFoundException("Woodwork " + cnpj + " was not found")); }
+	 * 
+	 * public java.util.List<WoodworkDTO>
+	 * findByCompanyName(String companyName) {
+	 * java.util.List<WoodworkDTO> woodwork =
+	 * woodworkRepository.findByCompanyName(companyName);
+	 * 
+	 * if (woodwork.isEmpty()) throw new WoodworkNotFoundException("Woodwork " +
+	 * companyName + " was not found"); return woodwork; }
+	 * 
+	 * 
+	 */
+
+}

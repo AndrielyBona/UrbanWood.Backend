@@ -1,0 +1,63 @@
+package br.sc.senac.urbanwood.controller.woodwork;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@CrossOrigin(origins = "*", maxAge = 3600)
+@RequestMapping("/woodwork")
+public class WoodworkController {
+//
+//    private final WoodworkService woodworkService;
+//
+//    public WoodworkController(WoodworkService woodworkService) {
+//        this.woodworkService = woodworkService;
+//    }
+//
+//   @PostMapping
+//    public ResponseEntity<WoodworkDTO> addWoodwork(@RequestBody WoodworkDTO dto) {
+//        return ResponseEntity.status(HttpStatus.CREATED).body(woodworkService.save(dto));
+//    }
+//
+//   @DeleteMapping("/{id}")
+//   public ResponseEntity<String> deleteWoodwork(@PathVariable(value = "id") Long id) {
+//       woodworkService.delete(id);
+//       return ResponseEntity.status(HttpStatus.OK).body("Woodwork deleted successfully");
+//   }
+
+   /* @PutMapping("/{id}")
+    public ResponseEntity<String> updateWoodwork(@RequestBody WoodworkDTO woodworkDTO, @PathVariable(value = "id") Long id) {
+        woodworkService.update(woodworkDTO, id);
+        return ResponseEntity.status(HttpStatus.OK).body("Woodwork updated successfully");
+    }
+
+    
+
+    @GetMapping("/{id}")
+    public ResponseEntity<ProfileWoodworkFullEditProjection> getProjectionById(@PathVariable(value = "id") Long id) {
+        return ResponseEntity.status(HttpStatus.OK).body(woodworkService.findById(id));
+    }
+
+    @GetMapping("/{cnpj}")
+    public ResponseEntity<WoodworkDTO> getProjectionByCnpj(@PathVariable(value = "cnpj") String cnpj) {
+        return ResponseEntity.status(HttpStatus.OK).body(woodworkService.findByCnpj(cnpj));
+    }
+
+    @GetMapping("/{companyName}")
+    public ResponseEntity<List<WoodworkDTO>> getProjectionByCompanyName(@PathVariable(value = "companyName") String companyName) {
+        return ResponseEntity.status(HttpStatus.OK).body(woodworkService.findByCompanyName(companyName));
+    }
+
+    @GetMapping("/{phoneNumberWoodwork}")
+    public ResponseEntity<List<WoodworkDTO>> getProjectionByPhoneNumber(@PathVariable(value = "phoneNumber") String phoneNumber) {
+        return ResponseEntity.status(HttpStatus.OK).body(woodworkService.findByPhoneNumber(phoneNumber));
+    }
+    
+    @GetMapping("/{neighborhoodWoodwork}")
+    public ResponseEntity<List<WoodworkDTO>> getProjectionByNeighborhood(@PathVariable(value = "neighborhood") String neighborhood) {
+        return ResponseEntity.status(HttpStatus.OK).body(woodworkService.findByNeighborhood(neighborhood));
+    }
+    
+    */
+}
